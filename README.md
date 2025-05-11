@@ -45,8 +45,7 @@ The dataset is organized as follows
     │   ├── Cryptbot/
     │   ├── Formbook/
     │   └── ...
-    ├── metadata.csv            # Dataset metadata and labels
-    └── README.md
+    
 
 
 ## License
