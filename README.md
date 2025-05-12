@@ -58,4 +58,4 @@ The dataset is intended for research purposes only. All malware samples were dyn
 ## Citation
 If you use the MMALVIZ dataset in your research, please cite it. 
 
-  Desalegn Aweke, W., & Peter Shaojui, W. (2025). MMALVIZ: Multimodal Malware Visualization Dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.15383439 
+  Desalegn Aweke, W., & Peter Shaojui, W. (2025). MMALVIZ: Multimodal Malware Visualization Dataset. Zenodo. https://doi.org/10.5281/zenodo.15383439 
