@@ -36,7 +36,7 @@ The **MMALVIZ: Multimodal Malware Visualization Dataset** is designed for malwar
 ## Dataset Structure
 The dataset is organized as follows
 
-    MMALVIZ/
+    MMALVIZ dataset/
     ├── api_call_images/        # RGB visualizations of API calls
     │   ├── Cryptbot/           # Cryptbot samples
     │   ├── Formbook/           # Formbook samples
