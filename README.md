@@ -59,7 +59,7 @@ analysis.
   images (RGB) and network traffic images (grayscale), fusing them into a
   shared 128-dimensional, L2-normalized embedding space.
 - **ProtoKrum** — our proposed defense mechanism, combining prototype cosine-deviation scoring on the embedding surface with Krum-based selection on the parameter surface to penalize clients whose prototypes deviate from consensus and suppress malicious updates during aggregation.
-- **ProtoTrimmed** — a robust baseline sharing ProtoKrum's dual-feature
+- **ProtoTrimmed** — also utilizes dual-feature
   prototypical representation and cosine-deviation scoring, but using
   trimmed mean aggregation instead of Krum selection.
 - **Baselines** — FedAvg, Median, RFA, and a Multi-Krum for direct comparison.
