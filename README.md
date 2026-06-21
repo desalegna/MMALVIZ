@@ -58,19 +58,13 @@ analysis.
 - **HybridNet** — a dual-encoder backbone that jointly processes API call
   images (RGB) and network traffic images (grayscale), fusing them into a
   shared 128-dimensional, L2-normalized embedding space.
-- **ProtoKrum** — our proposed two-gate aggregation defense:
-  - **Gate 1 (embedding surface):** prototype cosine deviation pre-filtering,
-    excluding clients whose prototypes deviate beyond a mean + k·std
-    threshold.
-  - **Gate 2 (parameter surface):** amplified Krum scoring applied to the
-    remaining clients.
+- **ProtoKrum** — our proposed defense mechanism, combining prototype cosine-deviation scoring on the embedding surface with Krum-based selection on the parameter surface to penalize clients whose prototypes deviate from consensus and suppress malicious updates during aggregation.
 - **ProtoTrimmed** — a robust baseline sharing ProtoKrum's dual-feature
   prototypical representation and cosine-deviation scoring, but using
   trimmed mean aggregation instead of Krum selection.
-- **Baselines** — FedAvg, Median, RFA, and a vanilla Multi-Krum variant
-  (without prototype-level filtering) for direct comparison.
+- **Baselines** — FedAvg, Median, RFA, and a Multi-Krum for direct comparison.
 - Every method is evaluated under both **IID** and **non-IID** client
-  partitioning, mirrored under `iid/` and `non_iid/` respectively.
+  partitioning.
 
 ## Repository Structure
 
