@@ -82,53 +82,18 @@ MMALVIZ/
 ├── metadata.csv                   # class names and per-class sample counts
 ├── iid/                            # IID client partitioning experiments
 │   ├── ProtoKrum.py                  # proposed defense
-│   ├── ProtoTrimmed.py               # prototypes + trimmed mean (robust baseline)
-│   ├── FedAvg.py                     # non-robust baseline
+│   ├── ProtoTrimmed.py              
+│   ├── FedAvg.py                    
 │   └── baselines/
-│       ├── Median.py                   # coordinate-wise median aggregation
-│       ├── Multi_Krum.py               # vanilla Krum, no prototype filtering
-│       └── RFA.py                      # robust federated averaging
 ├── non_iid/                        # Non-IID (Dirichlet) client partitioning experiments
 │   ├── ProtoKrum.py
 │   ├── ProtoTrimmed.py
 │   ├── FedAvg.py
-│   └── baselines/
-│       ├── Median.py
-│       ├── Multi_Krum.py
-│       └── RFA.py
+│   └── baselines/ 
 └── data/
     ├── api_call_images/             # RGB visualizations of API calls
-    │   ├── Cryptbot/
-    │   ├── Formbook/
-    │   ├── Remcos/
-    │   ├── Rokrat/
-    │   ├── Stealc/
-    │   ├── Vidar/
-    │   └── Xworm/
     └── network_traffic_images/      # Grayscale visualizations of network traffic
-        ├── Cryptbot/
-        ├── Formbook/
-        ├── Remcos/
-        ├── Rokrat/
-        ├── Stealc/
-        ├── Vidar/
-        └── Xworm/
 ```
-
-| Script                          | Method                       | Reproduces       |
-|-----------------------------------|-------------------------------|--------------------|
-| `iid/FedAvg.py`                   | FedAvg (non-robust baseline) | Tables 5 & 6       |
-| `iid/baselines/Median.py`         | Median aggregation           | Tables 5 & 6       |
-| `iid/baselines/RFA.py`            | Robust Federated Averaging   | Tables 5 & 6       |
-| `iid/baselines/Multi_Krum.py`     | Vanilla Krum (ablation)      | Supplementary      |
-| `iid/ProtoTrimmed.py`             | Prototypes + Trimmed Mean    | Tables 5 & 6       |
-| `iid/ProtoKrum.py`                | ProtoKrum (ours)             | Tables 5 & 6       |
-| `non_iid/FedAvg.py`               | FedAvg (non-robust baseline) | Tables 8 & 9       |
-| `non_iid/baselines/Median.py`     | Median aggregation           | Tables 8 & 9       |
-| `non_iid/baselines/RFA.py`        | Robust Federated Averaging   | Tables 8 & 9       |
-| `non_iid/baselines/Multi_Krum.py` | Vanilla Krum (ablation)      | Supplementary      |
-| `non_iid/ProtoTrimmed.py`         | Prototypes + Trimmed Mean    | Tables 8 & 9       |
-| `non_iid/ProtoKrum.py`            | ProtoKrum (ours)             | Tables 8 & 9       |
 
 ## Requirements
 
