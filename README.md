@@ -124,12 +124,7 @@ across clients in one of two ways:
   imbalance across clients.
 
 Each client constructs its N-way K-shot episodes locally from its own
-training partition only; evaluation episodes are drawn exclusively from the
-held-out test split.
-
-> Due to GitHub's file size limits, the full image set may be hosted
-> externally (e.g., Zenodo or IEEE DataPort). See the citation link below
-> if `data/` is not fully populated here.
+training partition only;
 
 If your local folder names differ, update the paths in each script's
 `Config` class (same pattern applies in both `iid/` and `non_iid/` scripts):
