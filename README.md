@@ -36,16 +36,20 @@ The **MMALVIZ: Multimodal Malware Visualization Dataset** is designed for malwar
 ## Dataset Structure
 The dataset is organized as follows
 
-    MMALVIZ dataset/
-    ├── api_call_images/        # RGB visualizations of API calls
-    │   ├── Cryptbot/           # Cryptbot samples
-    │   ├── Formbook/           # Formbook samples
-    │   └── ...
-    ├── network_traffic_images/ # Grayscale network traffic visuals
-    │   ├── Cryptbot/
-    │   ├── Formbook/
-    │   └── ...
-    
+  
+MMALVIZ/
+├── data/
+│   ├── api_call_images/             # RGB images
+│   └── network_traffic_images/      # Grayscale images
+├── ProtoKrum.py
+├── fedavg.py
+├── baselines/
+│   ├── Median.py
+│   ├── Multi_Krum.py
+│   └── RFA.py
+├── metadata.csv
+├── LICENSE
+└── README.md
 
 
 ## License
