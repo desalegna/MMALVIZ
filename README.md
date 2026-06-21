@@ -160,7 +160,6 @@ directory, including:
 
 - `final_<method>_results.txt` — summary table of ACC / ASR by PR and shot
 - per-round training curves and confusion matrices
-- for ProtoKrum: cosine deviation scores and Gate 1 filtering logs
 
 ## Key Configuration Parameters
 
