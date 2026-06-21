@@ -4,9 +4,7 @@ This repository contains the official implementation accompanying our work on
 **BRFFSL** (Backdoor-Resistant Federated Few-Shot Learning), a framework for
 malware classification evaluated on **MMALVIZ**, a multimodal malware
 visualization dataset combining API call images and network traffic images.
-We introduce **ProtoKrum**, a two-gate Byzantine-robust aggregation method
-that defends federated few-shot malware classifiers against poisoning
-attacks.
+We introduce **ProtoKrum**, a robust defense method that couples prototype cosine-deviation scoring with Krum-based selection to defend federated few-shot malware classifiers against poisoning attacks.
 
 ## Dataset Overview
 
