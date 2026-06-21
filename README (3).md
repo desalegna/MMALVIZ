@@ -142,7 +142,7 @@ TRAFFIC_IMAGE_DIR = os.path.join(SCRIPT_DIR, "..", "data", "network_traffic_imag
 ## Running the Experiments
 
 ```bash
-# ── IID setting (Tables 5 & 6) ──────────────────────────────
+# ── IID setting  ──────────────────────────────
 python iid/ProtoKrum.py
 python iid/ProtoTrimmed.py
 python iid/FedAvg.py
@@ -150,7 +150,7 @@ python iid/baselines/Median.py
 python iid/baselines/RFA.py
 python iid/baselines/Multi_Krum.py
 
-# ── Non-IID setting (Tables 8 & 9) ──────────────────────────
+# ── Non-IID setting ──────────────────────────
 python non_iid/ProtoKrum.py
 python non_iid/ProtoTrimmed.py
 python non_iid/FedAvg.py
@@ -179,7 +179,7 @@ directory, including:
 | `POISONING_RATES`         | `[0.3, 0.5]` | Poisoning rates evaluated              |
 | `POISONED_CLIENT_ID`      | 1            | Index of the malicious client          |
 | `TRIGGER_SIZE`            | 4            | Backdoor trigger patch size            |
-| Gate 1 std multiplier (k) | 1.5          | ProtoKrum pre-filter sensitivity       |
+
 
 ## License
 
