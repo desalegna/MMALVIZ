@@ -193,9 +193,6 @@ the data.
 
 If you use the MMALVIZ dataset or this code in your research, please cite:
 
-> Desalegn Aweke, W., & Peter Shaojui, W. (2025). *MMALVIZ: Multimodal
-> Malware Visualization Dataset*. Zenodo. https://doi.org/10.5281/zenodo.15383439
-
 ```
-[Add BRFFSL / ProtoKrum paper citation once published]
+[Add paper citation once published]
 ```
