@@ -103,14 +103,6 @@ MMALVIZ/
         └── Xworm/
 ```
 
-| Script                     | Method                            | Reproduces     |
-|-----------------------------|------------------------------------|-----------------|
-| `FedAvg.py`                 | FedAvg (non-robust baseline)      | Tables 5 & 6    |
-| `baselines/Median.py`       | Median aggregation                | Tables 5 & 6    |
-| `baselines/RFA.py`          | Robust Federated Averaging        | Tables 5 & 6    |
-| `baselines/Multi_Krum.py`   | Vanilla Krum (ablation)           | Supplementary   |
-| `ProtoKrum.py`               | ProtoKrum (ours) / ProtoTrimmed   | Tables 5 & 6    |
-
 ## Requirements
 
 - Python 3.9+
