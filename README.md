@@ -53,7 +53,7 @@ analysis.
 
 ## Method Overview
 
-- **Two stream CNN** — a dual-encoder backbone that jointly processes API call
+- A dual-encoder backbone that jointly processes API call
   images (RGB) and network traffic images (grayscale), fusing them into a
   shared 128-dimensional, L2-normalized embedding space.
 - **ProtoKrum** — our proposed defense mechanism, combining prototype cosine-deviation scoring on the embedding surface with Krum-based selection on the parameter surface to penalize clients whose prototypes deviate from consensus and suppress malicious updates during aggregation.
