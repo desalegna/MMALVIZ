@@ -51,36 +51,24 @@ analysis.
   ordered sequences of Windows API calls made during malware execution.
 - **Network traffic:** Captured as PCAP files during sandboxed execution.
 
-## Method Overview
-
-- A dual-encoder backbone that jointly processes API call
-  images (RGB) and network traffic images (grayscale), fusing them into a
-  shared 128-dimensional, L2-normalized embedding space.
-- **ProtoKrum** — our proposed defense mechanism, combining prototype cosine-deviation scoring on the embedding surface with Krum-based selection on the parameter surface to penalize clients whose prototypes deviate from consensus and suppress malicious updates during aggregation.
-- **ProtoTrimmed** — also utilizes dual-feature
-  prototypical representation and cosine-deviation scoring, but using
-  trimmed mean aggregation instead of Krum selection.
-- **Baselines** — FedAvg, FoolsGold, Median, RFA, and Multi-Krum for direct comparison.
-- Every method is evaluated under both **IID** and **non-IID** client
-  partitioning, controlled via script arguments.
-
 ## Repository Structure
 
 ```
 MMALVIZ/
+├── api_call_images/               # RGB visualizations of API calls
+└── network_traffic_images/        # Grayscale visualizations of network traffic
+├── ProtoKrum.py                  
+├── ProtoTrimmed.py              
+├── FedAvg.py                      
+├── FoolsGold.py                 
+├── Median.py                      
+├── Multi-Krum.py                
+├── RFA.py                        
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-├── metadata.csv                   # class names and per-class sample counts
-├── ProtoKrum.py                   # proposed defense (ProtoKrum)
-├── ProtoTrimmed.py                # proposed defense (ProtoTrimmed)
-├── FedAvg.py                      # baseline
-├── FoolsGold.py                   # baseline
-├── Median.py                      # baseline
-├── Multi-Krum.py                  # baseline
-├── RFA.py                         # baseline
-├── api_call_images/               # RGB visualizations of API calls
-└── network_traffic_images/        # Grayscale visualizations of network traffic
+├── metadata.csv              
+
 ```
 
 ## Requirements
