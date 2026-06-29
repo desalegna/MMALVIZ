@@ -112,7 +112,7 @@ across clients in one of two ways:
   imbalance across clients.
 
 Each client constructs its N-way K-shot episodes locally from its own
-training partition only.
+training partition.
 
 If your local folder names differ, update the paths in each script's
 `Config` class:
