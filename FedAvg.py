@@ -48,8 +48,8 @@ class Config:
     #   export TRAFFIC_IMAGE_DIR=/path/to/network_traffic_images
     # MMALVIZ dataset folders nested under data/(data/api_call_images/, data/network_traffic_images/).
 
-    API_IMAGE_DIR     = os.environ.get("API_IMAGE_DIR",     os.path.join("data", "api_call_images"))
-    TRAFFIC_IMAGE_DIR = os.environ.get("TRAFFIC_IMAGE_DIR", os.path.join("data", "network_traffic_images"))
+    API_IMAGE_DIR     = os.environ.get("API_IMAGE_DIR",     os.path.join(SCRIPT_DIR, "api_call_images"))
+    TRAFFIC_IMAGE_DIR = os.environ.get("TRAFFIC_IMAGE_DIR", os.path.join(SCRIPT_DIR, "network_traffic_images"))
     RESULTS_DIR       = os.environ.get("RESULTS_DIR",       os.path.join(SCRIPT_DIR, "results_fedavg_baseline"))
 
 
