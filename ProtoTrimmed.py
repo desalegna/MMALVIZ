@@ -42,7 +42,7 @@ class Config:
     N_QUERY            = 2
     EVAL_EPISODES      = 50
 
-    # MMALVIZ dataset
+    # MMALVIZ dataset/(api_call_images/, network_traffic_images/).
   
     API_IMAGE_DIR     = os.environ.get("API_IMAGE_DIR",     os.path.join(SCRIPT_DIR, "api_call_images"))
     TRAFFIC_IMAGE_DIR = os.environ.get("TRAFFIC_IMAGE_DIR", os.path.join(SCRIPT_DIR, "network_traffic_images"))
