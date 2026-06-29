@@ -44,7 +44,7 @@ class Config:
     EVAL_EPISODES      = 50
     TEST_SPLIT         = 0.2
 
-    # MMALVIZ dataset/(api_call_images/, data/network_traffic_images/).
+    # MMALVIZ dataset/(api_call_images/, network_traffic_images/).
 
     API_IMAGE_DIR     = os.environ.get("API_IMAGE_DIR",     os.path.join(SCRIPT_DIR, "api_call_images"))
     TRAFFIC_IMAGE_DIR = os.environ.get("TRAFFIC_IMAGE_DIR", os.path.join(SCRIPT_DIR, "network_traffic_images"))
