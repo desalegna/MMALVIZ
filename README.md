@@ -97,23 +97,6 @@ pip install -r requirements.txt
 The dataset is included in this repository under `api_call_images/` and
 `network_traffic_images/`, with one subfolder per malware family for each modality.
 
-### Client Data Partitioning
-
-The dataset is first split using a stratified 80/20 train-test split, with no
-sample shared between partitions. The training partition is then distributed
-across clients in one of two ways:
-
-- **IID** — each client receives a proportional share of every class
-  (`iid_partition()` in each script).
-- **Non-IID** — each client receives a class-skewed share drawn from a
-  Dirichlet distribution, with concentration parameter
-  α ∈ {0.2, 0.5, 2.0} controlling the degree of heterogeneity (lower α →
-  more skewed). Lower α values simulate stronger label-distribution
-  imbalance across clients.
-
-Each client constructs its N-way K-shot episodes locally from its own
-training partition.
-
 If your local folder names differ, update the paths in each script's
 `Config` class:
 
