@@ -122,38 +122,6 @@ API_IMAGE_DIR     = os.path.join(SCRIPT_DIR, "api_call_images")
 TRAFFIC_IMAGE_DIR = os.path.join(SCRIPT_DIR, "network_traffic_images")
 ```
 
-## Running the Experiments
-
-All scripts are located in the root directory. Partition mode (IID or non-IID)
-is controlled via the `--partition` argument:
-
-```bash
-# ── IID setting ───────────────────────────────
-python ProtoKrum.py    --partition iid
-python ProtoTrimmed.py --partition iid
-python FedAvg.py       --partition iid
-python Median.py       --partition iid
-python RFA.py          --partition iid
-python Multi-Krum.py   --partition iid
-python FoolsGold.py    --partition iid
-
-# ── Non-IID setting ───────────────────────────
-python ProtoKrum.py    --partition non_iid
-python ProtoTrimmed.py --partition non_iid
-python FedAvg.py       --partition non_iid
-python Median.py       --partition non_iid
-python RFA.py          --partition non_iid
-python Multi-Krum.py   --partition non_iid
-python FoolsGold.py    --partition non_iid
-```
-
-Each script evaluates poisoning rates `PR ∈ {0.3, 0.5}` across 1-shot and
-5-shot configurations, and writes results to its own `results_<method>/`
-directory, including:
-
-- `final_<method>_results.txt` — summary table of ACC / ASR by PR and shot
-- per-round training curves and confusion matrices
-
 ## Key Configuration Parameters
 
 | Parameter             | Default      | Description                            |
