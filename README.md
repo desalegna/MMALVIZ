@@ -105,19 +105,6 @@ API_IMAGE_DIR     = os.path.join(SCRIPT_DIR, "api_call_images")
 TRAFFIC_IMAGE_DIR = os.path.join(SCRIPT_DIR, "network_traffic_images")
 ```
 
-## Key Configuration Parameters
-
-| Parameter             | Default      | Description                            |
-|------------------------|--------------|----------------------------------------|
-| `NUM_CLIENTS`          | 5            | Number of federated clients            |
-| `NUM_ROUNDS`           | 20           | Federated training rounds              |
-| `LOCAL_EPOCHS`         | 5            | Local epochs per client per round      |
-| `N_WAY`                | 5            | Few-shot N-way classification          |
-| `N_QUERY`              | 2            | Query samples per class per episode    |
-| `POISONING_RATES`      | `[0.3, 0.5]` | Poisoning rates evaluated              |
-| `POISONED_CLIENT_ID`   | 1            | Index of the malicious client          |
-| `TRIGGER_SIZE`         | 4            | Backdoor trigger patch size            |
-
 ## License
 
 The dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
