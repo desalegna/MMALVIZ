@@ -6,6 +6,11 @@ malware classification evaluated on **MMALVIZ**, a multimodal malware
 visualization dataset combining API call images and network traffic images.
 We introduce **ProtoKrum**, a robust defense method that couples prototype cosine-deviation scoring with Krum-based selection to defend federated few-shot malware classifiers against poisoning attacks.
 
+To assess how well our defenses generalize beyond MMALVIZ, we additionally
+evaluate all methods on the public **MalImg** malware image dataset. MMALVIZ
+remains the primary dataset used throughout the paper; MalImg is used solely
+as a secondary generalizability check.
+
 ## Dataset Overview
 
 MMALVIZ is a multimodal dataset for malware detection and classification
