@@ -1,5 +1,5 @@
 """
-ProtoKrum on MalImg
+ProtoKrum Defense Against Backdoor Attacks
 
 Supports both data-partitioning regimes from a single script, controlled by
 PARTITION_MODES below:
