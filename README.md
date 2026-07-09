@@ -105,15 +105,6 @@ API_IMAGE_DIR     = os.path.join(SCRIPT_DIR, "api_call_images")
 TRAFFIC_IMAGE_DIR = os.path.join(SCRIPT_DIR, "network_traffic_images")
 ```
 
-MalImg is not distributed with this repository. 
-
-- Download the MalImg dataset from its original public source.
-- Place the extracted class folders in a local directory, e.g. `malimg_dataset/`.
-
-```python
-MALIMG_IMAGE_DIR = os.path.join(SCRIPT_DIR, "malimg_dataset")
-```
-
 ## License
 
 The dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
