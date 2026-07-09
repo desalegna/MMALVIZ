@@ -94,7 +94,7 @@ pip install -r requirements.txt
 
 ## Dataset Setup
 
-The dataset is included in this repository under `api_call_images/` and
+The MMALVIZ dataset is included in this repository under `api_call_images/` and
 `network_traffic_images/`, with one subfolder per malware family for each modality.
 
 If your local folder names differ, update the paths in each script's
@@ -105,21 +105,14 @@ API_IMAGE_DIR     = os.path.join(SCRIPT_DIR, "api_call_images")
 TRAFFIC_IMAGE_DIR = os.path.join(SCRIPT_DIR, "network_traffic_images")
 ```
 
-## MalImg Setup
+MalImg is not distributed with this repository. 
 
-MalImg is not distributed with this repository. To run the generalizability
-experiments (the `*_malimg.py` scripts):
-
-1. Download the MalImg dataset from its original public source.
-2. Place the extracted class folders in a local directory, e.g. `malimg_dataset/`.
-3. Update the path in each `*_malimg.py` script's `Config` class, e.g.:
+- Download the MalImg dataset from its original public source.
+- Place the extracted class folders in a local directory, e.g. `malimg_dataset/`.
 
 ```python
 MALIMG_IMAGE_DIR = os.path.join(SCRIPT_DIR, "malimg_dataset")
 ```
-
-4. Run the script the same way as its MMALVIZ counterpart (e.g.
-   `python ProtoKrum_malimg.py`).
 
 ## License
 
@@ -127,9 +120,6 @@ The dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/b
 Users must give appropriate credit, provide a link to the license, and
 indicate if changes were made. Code in this repository is licensed as
 described in [LICENSE](./LICENSE).
-
-MalImg is a third-party dataset and is not covered by this repository's
-license; refer to its original source for licensing and usage terms.
 
 ## Ethical Considerations
 
